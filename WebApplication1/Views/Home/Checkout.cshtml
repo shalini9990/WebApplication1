@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Checkout";
+}
+<div class="container">
+ 
+    <form action="">
+ 
+        <div class="row">
+ 
+            <div class="col">
+ 
+                <h1 class="title">Billing address</h1>
+ 
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="line address">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="City">
+                </div>
+ 
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="State">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="96000">
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <div class="col">
+ 
+                <h2 class="title">payment</h2>
+ 
+                <div class="inputBox">
+                    <span>Cards accepted :</span>
+                    <img src="https://thesavannahdentist.com/wp-content/uploads/2015/06/accepted-credit-cards-horizontal.png">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="Mrs. Kelly Chiong Kai Ting">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="XXXX-XXXX-XXXX">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="January">
+                </div>
+ 
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="XXXX">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="XXX">
+                    </div>
+                </div>
+ 
+            </div>
+    
+        </div>
+ 
+        <input type="submit" value="Place Order" class="submit-btn">
+ 
+    </form>
+ 
+</div>
+
+ 
+ 
+    </div>
+ 
+    <div class="credit"> created by <span> SDJ Private.Limited. </span> | All rights reserved 2022 </div>
+ 
+</section>
+
+@section Scripts{
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ <script src="~/js/Checkout.js"></script>
+ }

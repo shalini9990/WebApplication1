@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+ @*   <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />*@
+    @*<link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />*@
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="stylesheet" href="~/css/homepage-Shalini.css" asp-append-version="true">
+    @RenderSection("css",false)
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> FreshPick </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#categories">categories</a>
+            <a href="#products">products</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                @*<img src="image/cart-img-1.png" alt="">*@
+                <div class="content">
+                    <h3>Red Onion</h3>
+                    <span class="price">RM3.99/1kg</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total"> total : RM3.99/1Kg </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+
+    </header>
+
+
+            @RenderBody()
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> FreshPick <i class="fas fa-shopping-basket"></i> </h3>
+                <p>How can we help you?</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +60 1823456743</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +03 87543675 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> FreshPick@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Sibu, Sarawak, Malaysia - 96000 </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            </div>
+
+
+        </div>
+
+        <div class="credit"> created by <span> SDJ Private.Limited. </span> | All rights reserved 2022 </div>
+
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
